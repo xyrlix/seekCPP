@@ -27,7 +27,7 @@ public:
     uint32_t next() {
         return id_.fetch_add(1, std::memory_order_relaxed) + 1;
     }
-}
+};
 
 }
 
